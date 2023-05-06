@@ -1,0 +1,131 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  border: none;
+}
+
+body {
+  background-color: #066acd;
+  height: 100vh;
+}
+
+.container {
+  background-color: whitesmoke;
+  width: 40%;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  min-width: 450px;
+  min-height: 100px;
+}
+
+.task_input {
+  position: relative;
+  padding: 30px 20px;
+  margin-bottom: 20px;
+}
+
+.input_bar {
+  height: 30px;
+  width: 75%;
+  border-radius: 8px;
+  color: black;
+  font-weight: 700;
+  position: relative;
+  font-family: Indie Flower;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #d1d3d4;
+}
+
+.input_bar:focus {
+  border-color: #11708a;
+  outline: none;
+}
+
+.add_button {
+  margin: none;
+  margin-left: 20px;
+  padding: 0;
+  width: 90px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: #066acd;
+  color: whitesmoke;
+  font-family: Indie Flower;
+  font-size: 18px;
+  transition: background-color 0.15s;
+}
+
+.add_button:hover {
+  cursor: pointer;
+  background-color: #214466;
+}
+
+.add_button:after {
+  content: "";
+  border-radius: 4em;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: -20px 0px 0 40px white;
+}
+
+.add_button:active:after {
+  box-shadow: -20px -20px 0 0 white;
+  border-radius: 4em;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.add_button:active {
+  top: 1px;
+}
+
+.task_list {
+  border-radius: 10px;
+  width: 93%;
+  position: relative;
+  background-color: #ffffff;
+  padding: 30px 20px;
+  margin-top: 10px;
+}
+
+.task {
+  border-radius: 5px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid gray;
+  background-color: #c5e1e6;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#taskname {
+  font-family: Indie Flower;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.delete {
+  background-color: #6583e5;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  height: 20px;
+  width: 40px;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 25px;
+}
